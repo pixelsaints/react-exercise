@@ -1,0 +1,14 @@
+.bg-white{
+  background: $white;
+}
+
+.bg-black{
+  background: $black;
+}
+
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}{
+    background: $value;
+  }
+}
